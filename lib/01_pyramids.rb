@@ -5,28 +5,23 @@ def half_pyramid
 
 puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 print ">" 
-
 nb = gets.chomp.to_i #nombre entré par l'utilisateur
 
 lign = 0
 symbol = "#"
-
 
   while lign <= nb do
 
     if  nb < 1 || nb > 25
 
         puts "Erreur, veuillez choisir un nombre entre 1 et 25" #condition: tant que le nombre n'est pas compris entre 1 et 25, on redemande un autre nombre.
-    nb = gets.chomp.to_i
-
+        nb = gets.chomp.to_i
     else 
-        
         puts (symbol*lign).rjust(nb) # Si le nombre est compris entre 1 et 25, le contenu s'ajuste à droite grâce a .rjust en prenant en compte le nombre choisi par l'utilisateur.
     
     lign += 1
-
-    end
-    
+      
+    end  
   end
 
 end
@@ -36,10 +31,9 @@ end
 
 def full_pyramid
 
-  puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
-  print ">" 
-
-  nb = gets.chomp.to_i
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+print ">" 
+nb = gets.chomp.to_i
 
   while nb %2==0                                #boucle qui demande à l'utilisateur de resaisir un nombre si la première saisie est paire.
       puts "Oops ! Please enter odd number :"   # Oops ! veuillez saisir un nombre impair
