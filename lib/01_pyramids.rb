@@ -4,7 +4,7 @@
 
 def half_pyramid
 
-puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+puts "Salut, bienvenue dans ma super demi-pyramide ! Combien d'étages veux-tu ?"
 print ">" 
 nb = gets.chomp.to_i #nombre entré par l'utilisateur
 
@@ -51,7 +51,6 @@ def full_pyramid
   end
 end
 
-full_pyramid
 
 #-------------------------------------------------------------
 # wtf_pyramid
@@ -59,7 +58,7 @@ full_pyramid
 
 def wtf_pyramid
 
-  puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+  puts "Salut, bienvenue dans ma super wtf_pyramide ! Combien d'étages veux-tu ?"
   print ">" 
 
   nb = gets.chomp.to_i
@@ -89,4 +88,10 @@ symbol = "#"
   end
 end
 
-wtf_pyramid
+def perfom 
+    half_pyramid 
+    full_pyramid
+    wtf_pyramid
+end
+
+perfom
